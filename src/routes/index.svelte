@@ -142,10 +142,11 @@
             bind:value={wppNumber}
           />
           {#if wppNumber}
-            <button
+            <a
               href={genLink("55" + wppNumber, genText())}
+              target="_blank"
               class="bg-green-500 text-white flex-1 p-2 uppercase font-bold rounded"
-              >enviar</button
+              >enviar</a
             >
           {/if}
         {/if}
